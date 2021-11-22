@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+:root{
+    --Blue: hsl(246, 80%, 60%);
+    --Lightorange : hsl(15, 100%, 70%);
+    --Softblue : hsl(224, 84%, 52%);
+    --Lightred : hsl(348, 100%, 68%);
+    --Limegreen : hsl(145, 58%, 55%);
+    --Violet : hsl(264, 64%, 52%);
+    --Softorange : hsl(43, 84%, 65%);
+
+    --Verydarkblue: hsl(226, 43%, 10%);
+    --Darkblue: hsl(234, 46%, 17%);
+    --Desaturatedblue: hsl(235, 45%, 61%);
+    --PaleBlue: hsl(236, 100%, 87%);
+    --Palewhite:  hsl(230, 22%, 84%);
+}
+
+html{
+    box-sizing: border-box;
+}
+*,*::after,*::before{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--Verydarkblue);
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.light{
+    color: #f8f8f8;
+}
+.light::placeholder {
+    color: #ebebeb;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+}
+/* header */
+.wrapper{
+    width: 600px;
+}
+
+.devfinder header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* header */
+
+/* search */
+
+.search{
+    background-color: var(--Darkblue);
+    padding: .7rem 1.2rem;
+    display: flex;
+    align-items: center;
+    column-gap: 1.2rem;
+    margin: 1rem 0 1.3rem 0;
+}
+#devname{
+    width: 80%;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    border-radius: 4px;
+}
+.search-btn{
+    background-color: var(--Softblue);
+    color: #f8f8f8;
+    font-family: 'Open Sans', sans-serif;
+    border: none;
+    padding: .4rem .7rem;
+    margin-left: auto;
+    border-radius: 4px;
+}
+
+/* search */
+
+/* dev information */
+.showdev{
+    background-color: var(--Darkblue);
+    padding: 1.5rem 2rem;
+    border-radius: 4px;
+}
+.user__profile{
+    display: flex;
+    align-items: flex-start;
+}
+.user__profile figure{
+    margin-right: 1.5rem;
+}
+.username{
+    font-size: 1.5rem;
+    
+}
+.joined{
+    margin-left: auto;
+    color: #e6e6e6;
+    transform: translateY(8px);
+}
+#user_img{
+    border-radius: 50%;
+}
+.user__profile_link{
+    color: var(--Softblue);
+    font-weight: 700;
+    text-decoration: none;
+}
+.bio{
+    margin-top: 1.5rem;
+    color: #d3d3d3;
+}
+
+/* repos info */
+
+.profile__repo{
+    display: flex;
+    width: 381.50px;
+    justify-content: space-between;
+    margin-left: auto;
+    background-color: var(--Verydarkblue);
+    padding: 1rem;
+    border-radius: 8px;
+}
+h3{
+    font-size: 1rem;
+    color: #afafafe1;
+    font-weight: 400;
+}
+.profile__repo div p{
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.grid{
+    width: 381.50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px,1fr));
+    margin-top: 1.5rem;
+    margin-left: auto;
+    grid-gap: 15px;
+
+}
+.info p i{
+    margin-right: .4rem;
+}
+.unavailable{
+    color: #afafafe1;
+}
+
+/* dev information */
