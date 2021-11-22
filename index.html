@@ -7,32 +7,37 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/8a686341d0.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body class="light">
     <main class="wrapper">
         <section class="devfinder">
             <header>
                 <h1>devfinder</h1>
                 <div class="light-dark">
-                    <span>dark</span>
+                    <span>light</span>
                     <i class="fas fa-sun"></i>
                 </div>
             </header>
+
             <div class="search">
-                <input type="text" name="dev" id="devname">
-                <button class="search-btn">Search</button>
                 <i class="fas fa-search"></i>
+                <input type="text" name="dev" id="devname" placeholder="search github user..." class="light">
+                <button class="search-btn">Search</button>
+                
             </div>
             <article class="showdev">
 
                 <div class="user__profile">
                     <figure>
-                        <img src="" alt="" id="user_img">
+                        <img src="https://source.unsplash.com/random/130x130" alt="" id="user_img">
                     </figure>
                     <div class="user__identity">
-                        <p class="username">
+                        <h1 class="username">
                             The Octocat
-                        </p>
+                        </h1>
                         <a href="#" class="user__profile_link">@<span>Octocat</span></a>
+                        <div class="bio">
+                            <p>there's no bio</p>
+                        </div>
                     </div>
                     <div class="joined">
                         <p>joined <span id="in">15 jan 2007</span></p>
@@ -56,8 +61,8 @@
 
                 <div class="grid info">
                     <p class="location"><i class="fas fa-thumbtack"></i>San Francisco</p>
-                    <p class="link__profile"><i class="fas fa-link"></i>github.com/blog</p>
-                    <p class="twitter"><i class="fab fa-twitter"></i>not avalaible</p>
+                    <p class="twitter unavailable"><i class="fab fa-twitter"></i>not avalaible</p>
+                    <p class="link__profile "><i class="fas fa-link"></i>github.com/blog</p>
                     <p class="work"><i class="far fa-building"></i>github</p>
                 </div>
             </article>
