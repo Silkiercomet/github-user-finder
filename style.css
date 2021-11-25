@@ -95,6 +95,7 @@ body{
 }
 .user__profile figure{
     margin-right: 1.5rem;
+
 }
 .username{
     font-size: 1.5rem;
@@ -107,6 +108,8 @@ body{
 }
 #user_img{
     border-radius: 50%;
+    max-width: 130px;
+    max-height: 130px;
 }
 .user__profile_link{
     color: var(--Softblue);
