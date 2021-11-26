@@ -1,73 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>devfinder</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/8a686341d0.js" crossorigin="anonymous"></script>
-</head>
-<body class="light">
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/8a686341d0.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="light light__bg">
     <main class="wrapper">
-        <section class="devfinder">
-            <header>
-                <h1>devfinder</h1>
-                <div class="light-dark">
-                    <span>light</span>
-                    <i class="fas fa-sun"></i>
-                </div>
-            </header>
+      <section class="devfinder">
+        <header>
+          <h1>devfinder</h1>
+          <div class="light-dark">
+            <span>light</span>
+            <i class="fas fa-sun"></i>
+          </div>
+        </header>
 
-            <div class="search">
-                <i class="fas fa-search"></i>
-                <input type="text" name="dev" id="devname" placeholder="search github user..." class="light">
-                <button class="search-btn">Search</button>
-                
+        <div class="search light__component">
+          <i class="fas fa-search"></i>
+          <input
+            type="text"
+            name="dev"
+            id="devname"
+            placeholder="search github user..."
+            class="light"
+          />
+          <button class="search-btn">Search</button>
+        </div>
+        <article class="showdev light__component">
+          <div class="user__profile">
+            <figure>
+              <img
+                src="https://source.unsplash.com/random/130x130"
+                alt=""
+                id="user_img"
+              />
+            </figure>
+            <div class="user__identity">
+              <h1 class="username">The Octocat</h1>
+              <a href="#" class="user__profile_link"
+                >@<span id="link__name">Octocat</span></a
+              >
+              <div class="joined mobile">
+                <p>joined <span id="in">15 jan 2007</span></p>
+              </div>
+              <div class="bio desktop">
+                <p id="user__bio">there's no bio</p>
+              </div>
             </div>
-            <article class="showdev">
 
-                <div class="user__profile">
-                    <figure>
-                        <img src="https://source.unsplash.com/random/130x130" alt="" id="user_img">
-                    </figure>
-                    <div class="user__identity">
-                        <h1 class="username">
-                            The Octocat
-                        </h1>
-                        <a href="#" class="user__profile_link">@<span id="link__name">Octocat</span></a>
-                        <div class="bio">
-                            <p id="user__bio">there's no bio</p>
-                        </div>
-                    </div>
-                    <div class="joined">
-                        <p>joined <span id="in">15 jan 2007</span></p>
-                    </div>
-                </div>
+            <div class="joined desktop">
+              <p>joined <span id="in">15 jan 2007</span></p>
+            </div>
+          </div>
 
-                <div class="profile__repo">
-                    <div class="repos">
-                        <h3>Repos</h3>
-                        <p id="repos">8</p>
-                    </div>
-                    <div class="followers">
-                        <h3>Followers</h3>
-                        <p id="followers">3839</p>
-                    </div>
-                    <div class="following">
-                        <h3>Following</h3>
-                        <p id="following">8</p>
-                    </div>
-                </div>
+          <div class="mobile bio">
+            <p id="user__bio">there's no bio</p>
+          </div>
 
-                <div class="grid info">
-                    <p class="location"><i class="fas fa-thumbtack"></i>San Francisco</p>
-                    <p class="twitter unavailable"><i class="fab fa-twitter"></i>not avalaible</p>
-                    <p class="link__profile "><i class="fas fa-link"></i>github.com/blog</p>
-                    <p class="work"><i class="far fa-building"></i>github</p>
-                </div>
-            </article>
-        </section>
+          <div class="profile__repo light__component">
+            <div class="repos">
+              <h3>Repos</h3>
+              <p id="repos">8</p>
+            </div>
+            <div class="followers">
+              <h3>Followers</h3>
+              <p id="followers">3839</p>
+            </div>
+            <div class="following">
+              <h3>Following</h3>
+              <p id="following">8</p>
+            </div>
+          </div>
+
+          <div class="grid info">
+            <p class="location">
+              <i class="fas fa-thumbtack"></i>San Francisco
+            </p>
+            <p class="twitter unavailable">
+              <i class="fab fa-twitter"></i>not avalaible
+            </p>
+            <p class="link__profile">
+              <i class="fas fa-link"></i>github.com/blog
+            </p>
+            <p class="work"><i class="far fa-building"></i>github</p>
+          </div>
+        </article>
+      </section>
     </main>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
